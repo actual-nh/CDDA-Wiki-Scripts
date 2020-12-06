@@ -264,10 +264,10 @@ def generatePage (var): #generates all the data which should be in one of the wi
         toggle = False
         if(hasFlag(data[var], 'BIONIC_TOGGLED')):
             toggle = True
-            output.append("* This bionic can be turned on, which might have an power cost.\n")
+            output.append("* This bionic can be turned on, which might have a power cost.\n")
         if(not toggle):
             if('act_cost' in data[var]):
-                output.append("* This bionic can be turned on, which might have an power cost.\n")
+                output.append("* This bionic can be turned on, which might have a power cost.\n")
         if('react_cost' in data[var]):
             output.append("* This bionic can react automatically, which costs ")
             output.append(str(data[var]['react_cost']))
